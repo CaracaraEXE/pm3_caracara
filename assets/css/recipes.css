@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", sans-serif;
+}
+
+body{
+    background-color: lemonchiffon;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(240, 230, 140, .5) 50%);
+    background-size: 50px 50px;
+}
+
+h1,h2{
+    font-family: "Cherry Bomb One",serif;
+    font-weight: initial;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+h2{
+    background-color: darkgreen;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    color:white;
+    padding-left: 0.5em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .5);
+    color: white;
+    font-size: 1.25em;
+    background-color: forestgreen;
+    border: 0.25em solid white;
+    border-radius: 2em;
+    margin: 1em 4em;
+    width: 50em;
+}
+
+a{
+    border-radius: 1em;
+    background-color: firebrick;
+    color: white;
+    padding: 0.50em;
+    text-decoration: none;
+    text-align: left;
+    width: fit-content;
+    border: 3px solid darkgreen;
+    transition: padding 0.5s;
+}
+
+a:hover{
+    padding: 0.75em;
+}
+
+h1{
+    display: block;
+}
+
+.tag{
+    background-color: firebrick;
+    color: white;
+    border-radius: 1em;
+    padding:0.45em;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .5);
+}
+
+section{
+    display: flex;
+}
+
+.image{
+    width: 50%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.recipetags{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+ol, ul{
+    text-align: left;
+}
+
+ol{
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+
+ul,.stepbystep{
+    background-color: limegreen;
+    color: black;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
+
+ol li::marker,ul li::marker {
+    color: firebrick;
+}
+
+ol li{
+    margin-bottom: 5px;
+}
+
+.stepbystep{
+    margin-top: 1em;
+    display: inline-block;
+}
+
+img{
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 90%;
+    border: 3px solid white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .5);
+}
+
+.ingcontainer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 50%;
+    padding-top: 1em;
+}
+
+.tag:hover, a:hover{
+    transition: background-color 0.5s, color 0.5s, padding 0.5s;
+    background-color: khaki;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    .hero{
+        display: none;
+    }
+}

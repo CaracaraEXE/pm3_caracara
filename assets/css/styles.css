@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lemonchiffon;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(240, 230, 140, .5) 50%);
+    background-size: 50px 50px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    color:darkgreen;
+}
+
+
+.img-infinitebouncehover {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .img-infinitebouncehover:hover {
+    -webkit-animation-name: bounces;
+    animation-name: bounces;
+  }
+  
+  @-webkit-keyframes bounces {
+    0%, 100%, 20%, 50%, 80% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounces {
+    0%, 100%, 20%, 50%, 80% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+    
+
+.floatingtext{
+    font-family: "Cherry Bomb One", serif;
+    position: relative;
+    top: 0;
+    animation: bounce 0.3s ease infinite alternate;
+    font-size: 3em;
+    color: black;
+    
+  }
+
+  @keyframes bounce {
+    100% {
+    top: -.2rem;
+    }
+}
+
+header{
+    border-bottom: 0.25em solid white;
+}
+
+header a{
+    color: white;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5em;
+    font-family: "Itim", sans-serif;
+    color: white;
+    background-color: darkgreen;
+}
+
+li{
+    list-style-type: none;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+header .logo_container img{
+    width:70px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a:hover{ 
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}      
+
+.hero{
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    font-family: "Itim",sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, rgba(139, 130, 0, 0.799), rgba(191, 198, 6, 0.755)), url(/assets/images/brooke-lark-HlNcigvUi4Q-unsplash.jpg) no-repeat bottom center;
+}
+
+.recetas{
+    padding: 3em 6em 3em 6em;
+    font-family: "Itim", sans-serif;
+}
+
+.recetas_grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2em;
+}
+
+.boxed{
+    max-width: 1200px;
+    margin: 0 auto;;
+}
+
+.receta{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .5);
+    color: white;
+    font-size: 1.25em;
+    background-color: forestgreen;
+    border: 0.25em solid white;
+}
+
+.receta img{
+    width: 100%;
+    height: 100%;
+}
+
+.receta, .receta img{
+    border-radius: 100em;
+}
+
+.receta a{
+    padding: 0.45em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid darkgreen;
+    background-color:darkgreen;
+    border-radius: 2em;
+    font-size: 0.80em;
+    transition: padding 0.5s, background-color 0.5s, font-size 0.5s, color 0.5s;
+}
+
+.receta a:hover{
+    padding: 0.65em;
+    background-color: khaki;
+    color: black;
+}
+
+.receta h3{
+    padding: 0.25em 0;
+}
+
+footer{
+    border-top: 0.25em solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
