@@ -205,3 +205,30 @@ footer{
     align-items: center;
     padding: 1em;
 }
+
+@media screen and (max-width: 800px) {
+    header{
+        justify-content: space-between;
+        padding: 0px 1em;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+
+    .recetas{
+        padding: 3em;
+    }
+
+    .hero{
+        padding: 3em;
+    }
+
+    .floatingtext{
+        font-size: 2.5em;
+    }
+
+    .receta{
+        grid-column: span 6;
+    }
+  }
